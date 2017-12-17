@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>form</title>
+    <link rel="stylesheet" type="text/css" href="HW12.10.css">
+
+</head>
+<body>
+
+<form name="score" id="stu" target="nm_iframe">
+    姓名：
+    <input type="text" class="input" id="name"><br>
+    班级：
+    <input type="text" class="input" id="clas"><br>
+    语文成绩：
+    <input type="text" class="input" id="Chinese"><br>
+    数学成绩：
+    <input type="text" class="input" id="Math"><br>
+    理综成绩：
+    <input type="text" class="input" id="Science"><br>
+    <input type="submit" name="Handle" onclick="nstudent()" value="提交信息">
+</form>
+<iframe id="id_iframe" name="nm_iframe" style="display:none;"></iframe>
+<button class="ran_chin" onclick="ran_chin()">语文排序</button>
+<button class="ran_chin" onclick="ran_math()">数学排序</button>
+<button class="ran_chin" onclick="ran_sci()">理综排序</button>
+<button class="ran_chin" onclick="ran_all()">总分排序</button>
+<p>姓名 &nbsp;班级&nbsp;&nbsp;语文&nbsp;&nbsp;数学&nbsp;&nbsp;理综&nbsp;&nbsp;总成绩<br></p>
+<p id="p"></p>
+</body>
+<script type="text/javascript" src="HW.js"></script>
+</html>
